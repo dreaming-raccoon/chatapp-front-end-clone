@@ -1,65 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-    />
-    <title>Chat</title>
-  </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column"></div>
-      <span class="status-bar__clock">13:35</span>
-      <div class="status-bar__column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fas fa-volume-up"></i>
-      <i class="fas fa-wifi"></i>
-      <i class="fas fa-ban"></i>
-      <span class="status-bar__battery-level">35%</span>
-      <i class="fas fa-battery-three-quarters"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
+  <title>Setting</title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column"></div>
+    <span class="status-bar__clock">13:35</span>
+    <div class="status-bar__column"></div>
+    <i class="fas fa-clock"></i>
+    <i class="fas fa-volume-up"></i>
+    <i class="fas fa-wifi"></i>
+    <i class="fas fa-ban"></i>
+    <span class="status-bar__battery-level">35%</span>
+    <i class="fas fa-battery-three-quarters"></i>
+  </div>
+  <header class="header">
+    <div class="header__column">
+      <a href="more.html" class="header__back-btn">
+        <i class="fas fa-arrow-left fa-2x"></i>
+      </a>
+      <h1 class="header__title">Settings</h1>
     </div>
-    <header class="header">
-      <div class="header__column">
-        <h1 class="header__title">Chats</h1>
-      </div>
-      <div class="header__column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon"> </span>
-        <i class="far fa-comments"></i>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="fas fa-user"></i>
-          </a>
-        </li>
-        <li class="navigation__list-item">
-          <a href="index.html" class="nav__list-link">
-            <i class="fas fa-comment"></i>
-          </a>
-        </li>
-        <li class="navigation__list-item">
-          <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="navigation__list-item">
-          <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
+    <div class="header__column">
+      <span class="header__icon">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+  </header>
+  <main class="settings">
+    <section class="settings__section">
+      <ul class="settings__list">
+        <li class="settings__setting">
+          <span class="settings__icon">
+            <i class="fas fa-lock"></i>
+          </span>
+          <span class="settings__title">Privacy</span>
+        <li class="settings__setting">
+          <span class="settings__icon">
+            <i class="far fa-bell"></i>
+          </span>
+          <span class="settings__title">Notification</span>
+        <li class="settings__setting">
+          <span class="settings__icon">
+            <i class="far fa-users"></i>
+          </span>
+          <span class="settings__title">Friends</span>
       </ul>
-    </nav>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
